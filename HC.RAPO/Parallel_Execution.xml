@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="4" parallel="tests">
+
+	<test name="Test - 1">
+		<classes>
+			<class name="HC.RAPO.Admin.sessionLogViewTest" />
+			<class name="HC.RAPO.Admin.addDoctorAndVerifyTest" />
+		</classes>
+	</test>
+
+	<test name="Test - 2">
+		<classes>
+			<class name="HC.RAPO.Doctor.createPatientTest" />
+			<class name="HC.RAPO.Admin.addSpecializationAndVerifyTest" />
+		</classes>
+	</test>
+
+	<test name="Test - 3">
+		<classes>
+			<class name="HC.RAPO.Doctor.addReportAndVerifyInAdminTest" />
+			<class name="HC.RAPO.Patient.createAppointmentAndVerifyTest" />
+		</classes>
+	</test>
+
+	<test name="Test - 4">
+		<classes>
+			<class name="HC.RAPO.Doctor.viewAppointmentsPageOpenTest" />
+			<class name="HC.RAPO.Patient.createUserAndCheckInAdminAndDeleteTest" />
+			<class
+				name="HC.RAPO.Patient.createPatientLoginPutAppDoctorAppHisCancelAppTest" />
+		</classes>
+	</test>
+
+</suite> 

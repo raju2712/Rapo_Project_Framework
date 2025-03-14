@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="1">
+
+
+<!-- The below lines are used to run the test scripts without initilize @Listener annotation in every test scripts
+
+	<listeners>
+		<listener class-name="genericUtility.ListenerImplementClass"></listener>
+	</listeners>
+	
+	-->
+	
+	<!-- before execute this XML file un-comment the above lines of code-->
+	
+	
+	<test name="Test">
+		<classes>
+			<class name="HC.RAPO.Admin.sessionLogViewTest" />
+			<class name="HC.RAPO.Admin.addDoctorAndVerifyTest" />
+			<class name="HC.RAPO.Doctor.createPatientTest" />
+			<class name="HC.RAPO.Admin.addSpecializationAndVerifyTest" />
+			<class name="HC.RAPO.Doctor.addReportAndVerifyInAdminTest" />
+			<class name="HC.RAPO.Patient.createAppointmentAndVerifyTest" />
+			<class name="HC.RAPO.Doctor.viewAppointmentsPageOpenTest" />
+			<class name="HC.RAPO.Patient.createUserAndCheckInAdminAndDeleteTest" />
+			<class
+				name="HC.RAPO.Patient.createPatientLoginPutAppDoctorAppHisCancelAppTest" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

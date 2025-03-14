@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="HC.RAPO.Patient.createUserAndCheckInAdminAndDeleteTest">
+        <methods>
+          <include name="createPatient"/>
+          <include name="dataBaseConnection"/>
+          <include name="ExtentReportFlush"/>
+          <include name="toGetIntoUrl"/>
+          <include name="toCloseBrowser"/>
+          <include name="toLaunchBrowser"/>
+        </methods>
+      </class> <!-- HC.RAPO.Patient.createUserAndCheckInAdminAndDeleteTest -->
+      <class name="HC.RAPO.Admin.addSpecializationAndVerifyTest">
+        <methods>
+          <include name="dataBaseConnection"/>
+          <include name="addSpecializationTest"/>
+          <include name="ExtentReportFlush"/>
+          <include name="toGetIntoUrl"/>
+          <include name="toCloseBrowser"/>
+          <include name="toLaunchBrowser"/>
+        </methods>
+      </class> <!-- HC.RAPO.Admin.addSpecializationAndVerifyTest -->
+      <class name="HC.RAPO.Admin.addDoctorAndVerifyTest">
+        <methods>
+          <include name="dataBaseConnection"/>
+          <include name="addDoctorTest"/>
+          <include name="ExtentReportFlush"/>
+          <include name="toGetIntoUrl"/>
+          <include name="toCloseBrowser"/>
+          <include name="toLaunchBrowser"/>
+        </methods>
+      </class> <!-- HC.RAPO.Admin.addDoctorAndVerifyTest -->
+      <class name="HC.RAPO.Admin.sessionLogViewTest">
+        <methods>
+          <include name="dataBaseConnection"/>
+          <include name="ExtentReportFlush"/>
+          <include name="adminCanSeeSessionLogOfUserTest"/>
+          <include name="toGetIntoUrl"/>
+          <include name="toCloseBrowser"/>
+          <include name="toLaunchBrowser"/>
+        </methods>
+      </class> <!-- HC.RAPO.Admin.sessionLogViewTest -->
+      <class name="HC.RAPO.Patient.createAppointmentAndVerifyTest">
+        <methods>
+          <include name="dataBaseConnection"/>
+          <include name="ExtentReportFlush"/>
+          <include name="toGetIntoUrl"/>
+          <include name="createAppointmentAndVerifyInDoctorTest"/>
+          <include name="toCloseBrowser"/>
+          <include name="toLaunchBrowser"/>
+        </methods>
+      </class> <!-- HC.RAPO.Patient.createAppointmentAndVerifyTest -->
+      <class name="HC.RAPO.Patient.createPatientLoginPutAppDoctorAppHisCancelAppTest">
+        <methods>
+          <include name="dataBaseConnection"/>
+          <include name="ExtentReportFlush"/>
+          <include name="createPatientAndLogin"/>
+          <include name="toGetIntoUrl"/>
+          <include name="toCloseBrowser"/>
+          <include name="toLaunchBrowser"/>
+        </methods>
+      </class> <!-- HC.RAPO.Patient.createPatientLoginPutAppDoctorAppHisCancelAppTest -->
+      <class name="HC.RAPO.Doctor.createPatientTest">
+        <methods>
+          <include name="dataBaseConnection"/>
+          <include name="ExtentReportFlush"/>
+          <include name="createPatientAndAddMedicalHistoryAndCheckInAdmin"/>
+          <include name="toGetIntoUrl"/>
+          <include name="toCloseBrowser"/>
+          <include name="toLaunchBrowser"/>
+        </methods>
+      </class> <!-- HC.RAPO.Doctor.createPatientTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
