@@ -336,7 +336,6 @@ public class webdriverUtility {
 //		   for(int i=0; i<3; i++){
 //			   driver.findElement(By.tagName("html")).sendKeys(Keys.chord(Keys.CONTROL,Keys.SUBTRACT));
 //			  }
-		   
 		  
 	}
 	
