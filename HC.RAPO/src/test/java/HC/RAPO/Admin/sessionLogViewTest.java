@@ -2,6 +2,7 @@ package HC.RAPO.Admin;
 
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
@@ -18,6 +19,7 @@ import genericUtility.webdriverUtility;
 @Listeners(genericUtility.ListenerImplementClass.class)
 public class sessionLogViewTest extends BaseClass {
 
+	@Parameters("BROWSER")
 	@Test(groups = "smoke")
 	public void adminCanSeeSessionLogOfDoctorTest() throws Throwable {
 		welcomePage wp = new welcomePage(driver);
@@ -48,7 +50,7 @@ public class sessionLogViewTest extends BaseClass {
 		
 	}
 	
-	
+	@Parameters("BROWSER")
 	@Test(groups = "smoke")
 	public void adminCanSeeSessionLogOfUserTest() throws Throwable {
 		welcomePage wp = new welcomePage(driver);

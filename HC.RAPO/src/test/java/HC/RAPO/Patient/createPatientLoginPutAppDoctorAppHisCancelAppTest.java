@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
@@ -25,6 +26,7 @@ import genericUtility.webdriverUtility;
 @Listeners(genericUtility.ListenerImplementClass.class)
 public class createPatientLoginPutAppDoctorAppHisCancelAppTest extends BaseClass{
 
+	@Parameters("BROWSER")
 	@Test(groups = "system")
 	public void createPatientAndLogin() throws IOException, Throwable {
 		

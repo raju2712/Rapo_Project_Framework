@@ -3,6 +3,7 @@ package HC.RAPO.Doctor;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
@@ -25,8 +26,7 @@ import genericUtility.webdriverUtility;
 @Listeners(genericUtility.ListenerImplementClass.class)
 public class addReportAndVerifyInAdminTest extends BaseClass {
 	
-	
-
+	@Parameters("BROWSER")
 	@Test(groups = "integration")
 	public void addReport() throws Throwable {
 		

@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
@@ -22,6 +23,7 @@ import genericUtility.propertyFileUtility;
 @Listeners(genericUtility.ListenerImplementClass.class)
 public class addDoctorAndVerifyTest extends BaseClass {
 
+	@Parameters("BROWSER")
 	@Test(groups = "integration")
 	public void addDoctorTest() throws Throwable {
 

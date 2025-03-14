@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 import HC.RAPO.POM.AdminModule.adminHomePage;
@@ -24,6 +25,7 @@ import genericUtility.webdriverUtility;
 @Listeners(genericUtility.ListenerImplementClass.class)
 public class createUserAndCheckInAdminAndDeleteTest extends BaseClass {
 
+	@Parameters("BROWSER")
 	@Test(groups = "system")
 	public void createPatient() throws IOException, Throwable {
 		

@@ -1,6 +1,7 @@
 package HC.RAPO.Patient;
 
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
@@ -15,11 +16,11 @@ import genericUtility.BaseClass;
 import genericUtility.UtilityClassObject;
 import genericUtility.excelFileUtility;
 import genericUtility.propertyFileUtility;
-import genericUtility.webdriverUtility;
 
 @Listeners(genericUtility.ListenerImplementClass.class)
 public class createAppointmentAndVerifyTest extends BaseClass {
 
+	@Parameters("BROWSER")
 	@Test(groups = "integration")
 	public void createAppointmentAndVerifyInDoctorTest() throws Throwable {
 
