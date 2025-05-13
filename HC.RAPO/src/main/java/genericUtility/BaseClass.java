@@ -16,6 +16,7 @@ public class BaseClass {
 
 	public WebDriver driver = null;
 	public static WebDriver sDriver = null;
+	
 	propertyFileUtility putil = new propertyFileUtility();
 	excelFileUtility eutil = new excelFileUtility();
 	webdriverUtility wutil = new webdriverUtility();

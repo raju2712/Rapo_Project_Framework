@@ -13,11 +13,10 @@
 		</classes>
 	</test>
 
-
 	<test name="Test-2">
 		<parameter name="BROWSER" value="chrome"></parameter>
 		<classes>
-			<class name="HC.RAPO.Admin.sessionLogViewTest">
+			<class name="HC.RAPO.Admin.sessionLogViewTest">  <!-- In this class specified method only will run  -->
 				<methods>
 					<include name="adminCanSeeSessionLogOfUserTest" />
 				</methods>

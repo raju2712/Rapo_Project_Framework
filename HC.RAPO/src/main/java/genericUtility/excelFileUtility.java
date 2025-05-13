@@ -12,6 +12,7 @@ public class excelFileUtility {
 
 	/**
 	 * This method is used to read data from Excel file
+	 * 
 	 * @param sheetname
 	 * @param row
 	 * @param cell
@@ -25,9 +26,10 @@ public class excelFileUtility {
 		String value = wb.getSheet(sheetname).getRow(row).getCell(cell).toString();
 		return value;
 	}
-	
+
 	/**
 	 * This method is used to get last row number in the excel sheet
+	 * 
 	 * @param sheetname
 	 * @return
 	 * @throws Throwable
@@ -38,21 +40,22 @@ public class excelFileUtility {
 		int value = wb.getSheet(sheetname).getLastRowNum();
 		return value;
 	}
-	
+
 	/**
 	 * This method is used to return value to new cell
+	 * 
 	 * @param args
 	 * @param sheetname
 	 * @param row
 	 * @param cell
-	 * @param value 
+	 * @param value
 	 * @throws Throwable
 	 */
 	public static void main(String[] args, String sheetname, int row, int cell, Date value) throws Throwable {
 		FileInputStream fis = new FileInputStream(".\\src\\test\\resources\\TestData.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
-		 wb.getSheet(sheetname).getRow(row).createCell(cell).setCellValue(value);
-		 FileOutputStream fos = new FileOutputStream(".\\src\\test\\resources\\TestData.xlsx");
-		 wb.write(fos);
+		wb.getSheet(sheetname).getRow(row).createCell(cell).setCellValue(value);
+		FileOutputStream fos = new FileOutputStream(".\\src\\test\\resources\\TestData.xlsx");
+		wb.write(fos);
 	}
 }

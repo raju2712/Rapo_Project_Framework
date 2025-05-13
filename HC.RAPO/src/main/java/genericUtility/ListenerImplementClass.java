@@ -25,7 +25,7 @@ public class ListenerImplementClass implements ITestListener , ISuiteListener{
 
 	@Override
 	public void onStart(ISuite suite) {
-		System.out.println("report configuration");
+		System.out.println("=====report configuration======");
 		String time = new Date().toString().replace(" ", "_").replace(":", "_");
 		
 		esr = new ExtentSparkReporter("./AdvanceReport/report_" + time + ".html");

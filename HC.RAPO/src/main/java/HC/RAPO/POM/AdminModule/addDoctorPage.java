@@ -14,7 +14,35 @@ public class addDoctorPage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
+	
 	webdriverUtility wutil = new webdriverUtility();
+	
+	@FindBy(name = "Doctorspecialization")
+	private WebElement doctorSpecilizationDropDown;
+	
+	@FindBy(name = "docname")
+	private WebElement doctorNameTF;
+	
+	@FindBy(name = "clinicaddress")
+	private WebElement clinicAddressTF;
+	
+	@FindBy(name = "docfees")
+	private WebElement doctorFeesTF;
+	
+	@FindBy(name = "docemail")
+	private WebElement doctorEmailTF;
+	
+	@FindBy(name = "doccontact")
+	private WebElement doctorContactTF;
+	
+	@FindBy(name = "npass")
+	private WebElement passwordTF;
+	
+	@FindBy(name = "cfpass")
+	private WebElement ConfirmPasswordTF;
+	
+	@FindBy(id = "submit")
+	private WebElement submitBtn;
 	
 	public WebElement getDoctorSpecilizationDropDown() {
 		return doctorSpecilizationDropDown;
@@ -51,35 +79,6 @@ public class addDoctorPage {
 	public WebElement getSubmitBtn() {
 		return submitBtn;
 	}
-
-	
-	
-	@FindBy(name = "Doctorspecialization")
-	private WebElement doctorSpecilizationDropDown;
-	
-	@FindBy(name = "docname")
-	private WebElement doctorNameTF;
-	
-	@FindBy(name = "clinicaddress")
-	private WebElement clinicAddressTF;
-	
-	@FindBy(name = "docfees")
-	private WebElement doctorFeesTF;
-	
-	@FindBy(name = "docemail")
-	private WebElement doctorEmailTF;
-	
-	@FindBy(name = "doccontact")
-	private WebElement doctorContactTF;
-	
-	@FindBy(name = "npass")
-	private WebElement passwordTF;
-	
-	@FindBy(name = "cfpass")
-	private WebElement ConfirmPasswordTF;
-	
-	@FindBy(id = "submit")
-	private WebElement submitBtn;
 	
 
 	public void createDoctor(String SPECIALIZATION,StringBuilder DOCTOR_NAME,StringBuilder CLINIC_ADDRESS,StringBuilder FEES,StringBuilder CONTACT_NO,String EMAIL,StringBuilder PASSWORD) throws InterruptedException {
