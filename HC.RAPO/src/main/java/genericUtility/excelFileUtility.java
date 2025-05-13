@@ -51,7 +51,7 @@ public class excelFileUtility {
 	 * @param value
 	 * @throws Throwable
 	 */
-	public static void main(String[] args, String sheetname, int row, int cell, Date value) throws Throwable {
+	public void main(String sheetname, int row, int cell, Date value) throws Throwable {
 		FileInputStream fis = new FileInputStream(".\\src\\test\\resources\\TestData.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
 		wb.getSheet(sheetname).getRow(row).createCell(cell).setCellValue(value);

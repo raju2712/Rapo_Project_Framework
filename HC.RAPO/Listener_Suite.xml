@@ -9,7 +9,7 @@
 		<listener class-name="genericUtility.ListenerImplementClass"></listener>
 	</listeners>
 	
-	-->
+-->
 	
 	<!-- before execute this XML file un-comment the above lines of code-->
 	
@@ -24,10 +24,7 @@
 			<class name="HC.RAPO.Patient.createAppointmentAndVerifyTest" />
 			<class name="HC.RAPO.Doctor.viewAppointmentsPageOpenTest" />
 			<class name="HC.RAPO.Patient.createUserAndCheckInAdminAndDeleteTest" />
-			<class
-				name="HC.RAPO.Patient.createPatientLoginPutAppDoctorAppHisCancelAppTest" />
+			<class name="HC.RAPO.Patient.createPatientLoginPutAppDoctorAppHisCancelAppTest" />
 		</classes>
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+	</test> 
+</suite> 

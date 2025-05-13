@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
+	<test thread-count="5" name="Test">
 
 		<groups>
 			<run>
 				<include name="integration" />
 			</run>
-		</groups>2
-  
+		</groups>
+		
     <classes>
-      <class name="HC.RAPO.Admin.sessionLogViewTest"/>
-      <class name="HC.RAPO.Admin.addDoctorAndVerifyTest"/>
-      <class name="HC.RAPO.Doctor.createPatientTest"/>
-      <class name="HC.RAPO.Admin.addSpecializationAndVerifyTest"/>
-      <class name="HC.RAPO.Doctor.addReportAndVerifyInAdminTest"/>
-      <class name="HC.RAPO.Patient.createAppointmentAndVerifyTest"/>
-      <class name="HC.RAPO.Doctor.viewAppointmentsPageOpenTest"/>
-      <class name="HC.RAPO.Patient.createUserAndCheckInAdminAndDeleteTest"/>
-      <class name="HC.RAPO.Patient.createPatientLoginPutAppDoctorAppHisCancelAppTest"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+			<class name="HC.RAPO.Admin.sessionLogViewTest" />      <!-- From all the classes Integration TCs will only run -->
+			<class name="HC.RAPO.Admin.addDoctorAndVerifyTest" />
+			<class name="HC.RAPO.Doctor.createPatientTest" />
+			<class name="HC.RAPO.Admin.addSpecializationAndVerifyTest" />
+			<class name="HC.RAPO.Doctor.addReportAndVerifyInAdminTest" />
+			<class name="HC.RAPO.Patient.createAppointmentAndVerifyTest" />
+			<class name="HC.RAPO.Doctor.viewAppointmentsPageOpenTest" />
+			<class name="HC.RAPO.Patient.createUserAndCheckInAdminAndDeleteTest" />
+			<class name="HC.RAPO.Patient.createPatientLoginPutAppDoctorAppHisCancelAppTest" />
+		</classes>
+	</test>
+</suite> 

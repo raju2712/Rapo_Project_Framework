@@ -10,7 +10,7 @@
 		</groups>
   
     <classes>
-      <class name="HC.RAPO.Admin.sessionLogViewTest"/>
+      <class name="HC.RAPO.Admin.sessionLogViewTest"/>       <!-- From all the classes SMOKE TCs will only run -->
       <class name="HC.RAPO.Admin.addDoctorAndVerifyTest"/>
       <class name="HC.RAPO.Doctor.createPatientTest"/>
       <class name="HC.RAPO.Admin.addSpecializationAndVerifyTest"/>

@@ -70,7 +70,8 @@ public class ListenerImplementClass implements ITestListener , ISuiteListener{
 		String time = new Date().toString().replace(" ", "_").replace(":", "_");
 		UtilityClassObject.getTest().log(Status.FAIL, result.getThrowable());
 		test.addScreenCaptureFromBase64String(src, testName +"_" + time);
-		test.log(Status.FAIL, result.getMethod().getMethodName()+"-----FAILED-------");
+		
+		test.log(Status.FAIL, result.getMethod().getMethodName()+"-----FAILED-----");
 	}
 
 	@Override

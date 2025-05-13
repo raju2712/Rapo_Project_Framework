@@ -27,8 +27,7 @@
 		<classes>
 			<class name="HC.RAPO.Doctor.viewAppointmentsPageOpenTest" />
 			<class name="HC.RAPO.Patient.createUserAndCheckInAdminAndDeleteTest" />
-			<class
-				name="HC.RAPO.Patient.createPatientLoginPutAppDoctorAppHisCancelAppTest" />
+			<class name="HC.RAPO.Patient.createPatientLoginPutAppDoctorAppHisCancelAppTest" />
 		</classes>
 	</test>
 
