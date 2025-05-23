@@ -1,90 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="6" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-14T17:19:37 IST" name="Suite" finished-at="2025-03-14T17:20:48 IST" duration-ms="70337">
+  <suite started-at="2025-05-19T18:05:00 IST" name="Default suite" finished-at="2025-05-19T18:05:12 IST" duration-ms="12825">
     <groups>
-      <group name="system">
-        <method signature="createPatientLoginPutAppDoctorAppHisCancelAppTest.createPatientAndLogin()[pri:0, instance:HC.RAPO.Patient.createPatientLoginPutAppDoctorAppHisCancelAppTest@6a6cb05c]" name="createPatientAndLogin" class="HC.RAPO.Patient.createPatientLoginPutAppDoctorAppHisCancelAppTest"/>
-        <method signature="createUserAndCheckInAdminAndDeleteTest.createPatient()[pri:0, instance:HC.RAPO.Patient.createUserAndCheckInAdminAndDeleteTest@702657cc]" name="createPatient" class="HC.RAPO.Patient.createUserAndCheckInAdminAndDeleteTest"/>
-      </group> <!-- system -->
-      <group name="smoke">
-        <method signature="sessionLogViewTest.adminCanSeeSessionLogOfDoctorTest()[pri:0, instance:HC.RAPO.Admin.sessionLogViewTest@3c19aaa5]" name="adminCanSeeSessionLogOfDoctorTest" class="HC.RAPO.Admin.sessionLogViewTest"/>
-        <method signature="sessionLogViewTest.adminCanSeeSessionLogOfUserTest()[pri:0, instance:HC.RAPO.Admin.sessionLogViewTest@3c19aaa5]" name="adminCanSeeSessionLogOfUserTest" class="HC.RAPO.Admin.sessionLogViewTest"/>
-        <method signature="viewAppointmentsPageOpenTest.doctorCanSeeAppointmentsPageTest()[pri:0, instance:HC.RAPO.Doctor.viewAppointmentsPageOpenTest@43bc63a3]" name="doctorCanSeeAppointmentsPageTest" class="HC.RAPO.Doctor.viewAppointmentsPageOpenTest"/>
-      </group> <!-- smoke -->
-      <group name="integration">
-        <method signature="addDoctorAndVerifyTest.addDoctorTest()[pri:0, instance:HC.RAPO.Admin.addDoctorAndVerifyTest@689604d9]" name="addDoctorTest" class="HC.RAPO.Admin.addDoctorAndVerifyTest"/>
-        <method signature="addSpecializationAndVerifyTest.addSpecializationTest()[pri:0, instance:HC.RAPO.Admin.addSpecializationAndVerifyTest@175c2241]" name="addSpecializationTest" class="HC.RAPO.Admin.addSpecializationAndVerifyTest"/>
-        <method signature="addReportAndVerifyInAdminTest.addReport()[pri:0, instance:HC.RAPO.Doctor.addReportAndVerifyInAdminTest@6c6cb480]" name="addReport" class="HC.RAPO.Doctor.addReportAndVerifyInAdminTest"/>
-        <method signature="createAppointmentAndVerifyTest.createAppointmentAndVerifyInDoctorTest()[pri:0, instance:HC.RAPO.Patient.createAppointmentAndVerifyTest@3c46e67a]" name="createAppointmentAndVerifyInDoctorTest" class="HC.RAPO.Patient.createAppointmentAndVerifyTest"/>
-      </group> <!-- integration -->
     </groups>
-    <test started-at="2025-03-14T17:19:37 IST" name="Test - 1" finished-at="2025-03-14T17:20:48 IST" duration-ms="70337">
-      <class name="HC.RAPO.Admin.sessionLogViewTest">
-        <test-method is-config="true" signature="ExtentReportFlush()[pri:0, instance:HC.RAPO.Admin.sessionLogViewTest@3c19aaa5]" started-at="2025-03-14T17:19:37 IST" name="ExtentReportFlush" finished-at="2025-03-14T17:19:37 IST" duration-ms="0" status="PASS">
+    <test started-at="2025-05-19T18:05:00 IST" name="Default test" finished-at="2025-05-19T18:05:12 IST" duration-ms="12825">
+      <class name="NestedFrame_Model.refreshingXpath">
+        <test-method signature="rpa()[pri:0, instance:NestedFrame_Model.refreshingXpath@3e58a80e]" started-at="2025-05-19T18:05:00 IST" name="rpa" finished-at="2025-05-19T18:05:12 IST" duration-ms="12767" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ExtentReportFlush -->
-        <test-method is-config="true" signature="toLaunchBrowser()[pri:0, instance:HC.RAPO.Admin.sessionLogViewTest@3c19aaa5]" started-at="2025-03-14T17:19:37 IST" name="toLaunchBrowser" finished-at="2025-03-14T17:19:37 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toLaunchBrowser -->
-        <test-method is-config="true" signature="toLaunchBrowser()[pri:0, instance:HC.RAPO.Admin.sessionLogViewTest@3c19aaa5]" started-at="2025-03-14T17:19:37 IST" name="toLaunchBrowser" finished-at="2025-03-14T17:19:37 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toLaunchBrowser -->
-        <test-method is-config="true" signature="toGetIntoUrl()[pri:0, instance:HC.RAPO.Admin.sessionLogViewTest@3c19aaa5]" started-at="2025-03-14T17:19:37 IST" name="toGetIntoUrl" finished-at="2025-03-14T17:19:51 IST" duration-ms="14188" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toGetIntoUrl -->
-        <test-method signature="adminCanSeeSessionLogOfDoctorTest()[pri:0, instance:HC.RAPO.Admin.sessionLogViewTest@3c19aaa5]" started-at="2025-03-14T17:19:51 IST" name="adminCanSeeSessionLogOfDoctorTest" finished-at="2025-03-14T17:20:07 IST" duration-ms="15040" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- adminCanSeeSessionLogOfDoctorTest -->
-        <test-method is-config="true" signature="toCloseBrowser()[pri:0, instance:HC.RAPO.Admin.sessionLogViewTest@3c19aaa5]" started-at="2025-03-14T17:20:07 IST" name="toCloseBrowser" finished-at="2025-03-14T17:20:07 IST" duration-ms="663" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toCloseBrowser -->
-        <test-method is-config="true" signature="toGetIntoUrl()[pri:0, instance:HC.RAPO.Admin.sessionLogViewTest@3c19aaa5]" started-at="2025-03-14T17:20:07 IST" name="toGetIntoUrl" finished-at="2025-03-14T17:20:20 IST" duration-ms="12658" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toGetIntoUrl -->
-        <test-method signature="adminCanSeeSessionLogOfUserTest()[pri:0, instance:HC.RAPO.Admin.sessionLogViewTest@3c19aaa5]" started-at="2025-03-14T17:20:20 IST" name="adminCanSeeSessionLogOfUserTest" finished-at="2025-03-14T17:20:27 IST" duration-ms="7508" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- adminCanSeeSessionLogOfUserTest -->
-        <test-method is-config="true" signature="toCloseBrowser()[pri:0, instance:HC.RAPO.Admin.sessionLogViewTest@3c19aaa5]" started-at="2025-03-14T17:20:27 IST" name="toCloseBrowser" finished-at="2025-03-14T17:20:30 IST" duration-ms="2376" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toCloseBrowser -->
-        <test-method is-config="true" signature="ExtentReportFlush()[pri:0, instance:HC.RAPO.Admin.sessionLogViewTest@3c19aaa5]" started-at="2025-03-14T17:20:30 IST" name="ExtentReportFlush" finished-at="2025-03-14T17:20:30 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtentReportFlush -->
-      </class> <!-- HC.RAPO.Admin.sessionLogViewTest -->
-      <class name="HC.RAPO.Admin.addDoctorAndVerifyTest">
-        <test-method is-config="true" signature="toLaunchBrowser()[pri:0, instance:HC.RAPO.Admin.addDoctorAndVerifyTest@689604d9]" started-at="2025-03-14T17:20:30 IST" name="toLaunchBrowser" finished-at="2025-03-14T17:20:30 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toLaunchBrowser -->
-        <test-method is-config="true" signature="toGetIntoUrl()[pri:0, instance:HC.RAPO.Admin.addDoctorAndVerifyTest@689604d9]" started-at="2025-03-14T17:20:30 IST" name="toGetIntoUrl" finished-at="2025-03-14T17:20:37 IST" duration-ms="7150" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toGetIntoUrl -->
-        <test-method signature="addDoctorTest()[pri:0, instance:HC.RAPO.Admin.addDoctorAndVerifyTest@689604d9]" started-at="2025-03-14T17:20:37 IST" name="addDoctorTest" finished-at="2025-03-14T17:20:47 IST" duration-ms="10339" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addDoctorTest -->
-        <test-method is-config="true" signature="toCloseBrowser()[pri:0, instance:HC.RAPO.Admin.addDoctorAndVerifyTest@689604d9]" started-at="2025-03-14T17:20:47 IST" name="toCloseBrowser" finished-at="2025-03-14T17:20:48 IST" duration-ms="343" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toCloseBrowser -->
-        <test-method is-config="true" signature="ExtentReportFlush()[pri:0, instance:HC.RAPO.Admin.addDoctorAndVerifyTest@689604d9]" started-at="2025-03-14T17:20:48 IST" name="ExtentReportFlush" finished-at="2025-03-14T17:20:48 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ExtentReportFlush -->
-      </class> <!-- HC.RAPO.Admin.addDoctorAndVerifyTest -->
-    </test> <!-- Test - 1 -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- rpa -->
+      </class> <!-- NestedFrame_Model.refreshingXpath -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

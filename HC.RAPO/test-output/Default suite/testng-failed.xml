@@ -3,16 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HC.RAPO.Patient.createUserAndCheckInAdminAndDeleteTest">
+      <class name="NestedFrame_Model.Flip">
         <methods>
-          <include name="createPatient"/>
-          <include name="dataBaseConnection"/>
-          <include name="ExtentReportFlush"/>
-          <include name="toGetIntoUrl"/>
-          <include name="toCloseBrowser"/>
-          <include name="toLaunchBrowser"/>
+          <include name="Amazon"/>
         </methods>
-      </class> <!-- HC.RAPO.Patient.createUserAndCheckInAdminAndDeleteTest -->
+      </class> <!-- NestedFrame_Model.Flip -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

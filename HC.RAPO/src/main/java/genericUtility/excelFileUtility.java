@@ -48,13 +48,13 @@ public class excelFileUtility {
 	 * @param sheetname
 	 * @param row
 	 * @param cell
-	 * @param value
+	 * @param pname
 	 * @throws Throwable
 	 */
-	public void main(String sheetname, int row, int cell, Date value) throws Throwable {
+	public void returnData(String sheetname, int row, int cell, Date pname) throws Throwable {
 		FileInputStream fis = new FileInputStream(".\\src\\test\\resources\\TestData.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
-		wb.getSheet(sheetname).getRow(row).createCell(cell).setCellValue(value);
+		wb.getSheet(sheetname).getRow(row).createCell(cell).setCellValue(pname);
 		FileOutputStream fos = new FileOutputStream(".\\src\\test\\resources\\TestData.xlsx");
 		wb.write(fos);
 	}
