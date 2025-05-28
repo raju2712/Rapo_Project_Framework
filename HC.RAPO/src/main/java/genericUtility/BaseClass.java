@@ -94,7 +94,7 @@ public class BaseClass {
 	@BeforeTest
 
 	@AfterSuite
-	public void ExtentReportFlush() {
+	public void closeDBconnection() {
 		System.out.println("Closing the DB connection");
 
 	}

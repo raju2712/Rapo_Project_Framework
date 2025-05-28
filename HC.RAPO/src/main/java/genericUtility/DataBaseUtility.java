@@ -87,7 +87,6 @@ public class DataBaseUtility {
 	
 	/**
 	 * This method is used to non-select query
-	 * 
 	 * @param query
 	 * @return
 	 */

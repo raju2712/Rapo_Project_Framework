@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="NestedFrame_Model.Flip">
+      <class name="NestedFrame_Model.phpTravels">
         <methods>
-          <include name="Amazon"/>
+          <include name="phpDemo"/>
         </methods>
-      </class> <!-- NestedFrame_Model.Flip -->
+      </class> <!-- NestedFrame_Model.phpTravels -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

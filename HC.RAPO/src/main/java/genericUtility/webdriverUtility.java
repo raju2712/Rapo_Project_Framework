@@ -79,10 +79,10 @@ public class webdriverUtility {
 	 */
 	public void switchToTabOnUrl(WebDriver driver, CharSequence partialUrl) {
 		Set<String> allWindowIds = driver.getWindowHandles();
-		Iterator<String> iterator = allWindowIds.iterator();
+		Iterator<String> iterate = allWindowIds.iterator();
 		
-		while(iterator.hasNext()) {
-			String ChildwindowId = iterator.next();
+		while(iterate.hasNext()) {
+			String ChildwindowId = iterate.next();
 			driver.switchTo().window(ChildwindowId);
 			
 			String actualUrl = driver.getCurrentUrl();
@@ -108,6 +108,21 @@ public class webdriverUtility {
 			
 			String actualUrl = driver.getTitle();
 			if(actualUrl.contains(partialTitle)) {
+				break;
+			}
+		}
+	}
+	
+	/**
+	 * This method is used to switch window
+	 * @param driver
+	 * @param partialTitle
+	 */
+	public void toSwitchWindow(WebDriver driver, String partialTitle) {
+		String[] allIds = null;
+		for(String id : allIds) {
+			String windowTitle = driver.switchTo().window(id).getTitle();
+			if(windowTitle.contains(partialTitle)) {
 				break;
 			}
 		}
@@ -162,8 +177,8 @@ public class webdriverUtility {
 	 * @param driver
 	 * @param name_id
 	 */
-	public void toHandleFrame(WebDriver driver, String name_id) {
-		driver.switchTo().frame(name_id);
+	public void toHandleFrame(WebDriver driver, String idOfFrame) {
+		driver.switchTo().frame(idOfFrame);
 	}
 
 	/**
@@ -291,21 +306,6 @@ public class webdriverUtility {
 		File temp = driver.findElement(By.xpath(xpathOfAnElement)).getScreenshotAs(OutputType.FILE);
 		File src = new File("./ErrorShots/WoodenStreetLogo.jpeg");
 		org.openqa.selenium.io.FileHandler.copy(temp, src);
-	}
-	
-	/**
-	 * This method is used to switch window
-	 * @param driver
-	 * @param partialTitle
-	 */
-	public void toSwitchWindow(WebDriver driver, String partialTitle) {
-		String[] allIds = null;
-		for(String id : allIds) {
-			String windowTitle = driver.switchTo().window(id).getTitle();
-			if(windowTitle.contains(partialTitle)) {
-				break;
-			}
-		}
 	}
 	
 	/**

@@ -16,7 +16,6 @@ public class javaUtility {
 	//SimpleDateFormat sdf;
 	/**
 	 * This method is used to get the current date
-	 * 
 	 * @return
 	 */
 	public String togetSystemDateYYYYMMDD() {
@@ -29,7 +28,6 @@ public class javaUtility {
 
 	/**
 	 * This method is used to generate date according to our input
-	 * 
 	 * @param days
 	 * @return
 	 */
@@ -55,7 +53,8 @@ public class javaUtility {
 		for(int i=0;i<n;i++) {
 			int index = (int)(AlphaNumericString.length()* Math.random());
 			sb.append(AlphaNumericString.charAt(index));
-		}return sb;
+		}
+		return sb;
 	}
 	
 	/**
@@ -69,7 +68,8 @@ public class javaUtility {
 		for(int i=0;i<n;i++) {
 			int index = (int)(AlphaNumericString.length()* Math.random());
 			sb.append(AlphaNumericString.charAt(index));
-		}return sb;
+		}
+		return sb;
 	}
 
 	
