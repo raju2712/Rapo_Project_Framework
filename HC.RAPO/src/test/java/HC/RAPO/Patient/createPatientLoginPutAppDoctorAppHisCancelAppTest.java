@@ -54,14 +54,14 @@ public class createPatientLoginPutAppDoctorAppHisCancelAppTest extends BaseClass
 		
 		UtilityClassObject.getTest().log(Status.PASS,"Application opened");
 		wp.toScrollDownToLoginAsPatient(driver);
-		wutil.switchToTabOnUrl(driver, "hms/user-login.php");
+		wutil.switchWindowUsiingPartialUrl(driver, "hms/user-login.php");
 		UtilityClassObject.getTest().log(Status.PASS,"Patient log in page opened");
 		plp.getCreateAccountLink().click();
-		wutil.switchToTabOnUrl(driver, "hms/registration.php");
+		wutil.switchWindowUsiingPartialUrl(driver, "hms/registration.php");
 		UtilityClassObject.getTest().log(Status.PASS,"User registration page opened");
 		cnap.createNewAccount(FULL_NAME, ADDRESS, CITY, PASSWORD);
 		UtilityClassObject.getTest().log(Status.PASS,"New user created");
-	    wutil.switchToTabOnTitle(driver, "Hospital management System");
+	    wutil.SwitchWindowUsingPartialTitle(driver, "Hospital management System");
 	    UtilityClassObject.getTest().log(Status.PASS,"Switched back to welcome page");
 		wp.toScrollDownToLoginAsPatient(driver);
 		UtilityClassObject.getTest().log(Status.PASS,"Patient log in page opened");

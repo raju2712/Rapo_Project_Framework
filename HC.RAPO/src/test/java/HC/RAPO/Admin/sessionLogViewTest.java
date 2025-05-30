@@ -44,9 +44,9 @@ public class sessionLogViewTest extends BaseClass {
 		Assert.assertEquals(actualTitle, EXPECTED_TITLE);
 		ahp.logoutAsAdmin();
 		UtilityClassObject.getTest().log(Status.INFO, "Successfully logged out as Admin");
-		wutil.switchToTabOnTitle(driver, "Hospital management System");
+		wutil.SwitchWindowUsingPartialTitle(driver, "Hospital management System");
 		UtilityClassObject.getTest().log(Status.INFO, "Switched back to Welcome Page");
-		wutil.switchToTabOnTitle(driver, "Hospital management System");
+		wutil.SwitchWindowUsingPartialTitle(driver, "Hospital management System");
 		
 	}
 	
@@ -75,8 +75,8 @@ public class sessionLogViewTest extends BaseClass {
 		UtilityClassObject.getTest().log(Status.INFO, "Patient session logs page opened");
 		ahp.logoutAsAdmin();
 		UtilityClassObject.getTest().log(Status.INFO, "Successfully logged out as Admin");
-		wutil.switchToTabOnTitle(driver, "Hospital management System");
+		wutil.SwitchWindowUsingPartialTitle(driver, "Hospital management System");
 		UtilityClassObject.getTest().log(Status.INFO, "Switched back to Welcome Page");
-		wutil.switchToTabOnTitle(driver, "Hospital management System");
+		wutil.SwitchWindowUsingPartialTitle(driver, "Hospital management System");
 	}
 }

@@ -50,7 +50,7 @@ public class adminLoginPage {
 	
 	public void LoginAsAdmin(String adminUserName, String adminPassword) {
 		//wp.getClickHereBtnOfAdmin().click();
-		wutil.switchToTabOnUrl(driver,"hms/admin/");	
+		wutil.switchWindowUsiingPartialUrl(driver,"hms/admin/");	
 		getUsernameTF().sendKeys(adminUserName);
 		getPasswordTF().sendKeys(adminPassword);
         getLoginBtn().click();

@@ -52,7 +52,7 @@ public class doctorLoginPage {
 	
 	public void loginAsDoctor(String doctorUserName, String doctorPassword) {
 
-		wutil.switchToTabOnUrl(driver, "hms/doctor/");
+		wutil.switchWindowUsiingPartialUrl(driver, "hms/doctor/");
 		getUsernameTF().sendKeys(doctorUserName);
 		getPasswordTF().sendKeys(doctorPassword);
 		getLoginBtn().click();

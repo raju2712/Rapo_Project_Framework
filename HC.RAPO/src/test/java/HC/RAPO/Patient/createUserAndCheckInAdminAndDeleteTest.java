@@ -50,13 +50,13 @@ public class createUserAndCheckInAdminAndDeleteTest extends BaseClass {
 		UtilityClassObject.getTest().log(Status.PASS,"Application opened");
 		wp.toScrollDownToLoginAsPatient(driver);
 		UtilityClassObject.getTest().log(Status.PASS,"Patient log in page opened");
-		wutil.switchToTabOnUrl(driver, "hms/user-login.php");
+		wutil.switchWindowUsiingPartialUrl(driver, "hms/user-login.php");
 		plp.getCreateAccountLink().click();
-		wutil.switchToTabOnUrl(driver, "hms/registration.php");
+		wutil.switchWindowUsiingPartialUrl(driver, "hms/registration.php");
 		UtilityClassObject.getTest().log(Status.PASS,"Patient registration page opened");
 		cnap.createNewAccount(FULL_NAME, ADDRESS, CITY, PASSWORD);
 		UtilityClassObject.getTest().log(Status.PASS,"New Patient created");
-		wutil.switchToTabOnTitle(driver, "Hospital management System");
+		wutil.SwitchWindowUsingPartialTitle(driver, "Hospital management System");
 		wp.toScrollDownToLoginAsAdmin(driver);
 		UtilityClassObject.getTest().log(Status.PASS,"Admin login page opened");
 		alp.LoginAsAdmin(ADMIN_USERNAME, ADMIN_PASSWORD);

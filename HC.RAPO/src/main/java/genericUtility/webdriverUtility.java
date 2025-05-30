@@ -77,7 +77,7 @@ public class webdriverUtility {
 	 * @param driver
 	 * @param partialUrl
 	 */
-	public void switchToTabOnUrl(WebDriver driver, CharSequence partialUrl) {
+	public void switchWindowUsiingPartialUrl(WebDriver driver, CharSequence partialUrl) {
 		Set<String> allWindowIds = driver.getWindowHandles();
 		Iterator<String> iterate = allWindowIds.iterator();
 		
@@ -98,7 +98,7 @@ public class webdriverUtility {
 	 * @param driver
 	 * @param partialTitle
 	 */
-	public void switchToTabOnTitle(WebDriver driver, CharSequence partialTitle) {
+	public void switchWindowUsingPartialTitle(WebDriver driver, CharSequence partialTitle) {
 		Set<String> allWindowIds = driver.getWindowHandles();
 		Iterator<String> iterator = allWindowIds.iterator();
 		
@@ -118,9 +118,10 @@ public class webdriverUtility {
 	 * @param driver
 	 * @param partialTitle
 	 */
-	public void toSwitchWindow(WebDriver driver, String partialTitle) {
-		String[] allIds = null;
-		for(String id : allIds) {
+	public void SwitchWindowUsingPartialTitle(WebDriver driver, String partialTitle) {
+		Set<String> allIds = driver.getWindowHandles();
+		for (String id : allIds) {
+			driver.switchTo().window(id);
 			String windowTitle = driver.switchTo().window(id).getTitle();
 			if(windowTitle.contains(partialTitle)) {
 				break;
@@ -289,7 +290,7 @@ public class webdriverUtility {
 	 * @param screenshotname
 	 * @throws IOException 
 	 */
-	public void toTakeScreenShot(WebDriver driver, String screenshotname) throws IOException {
+	public void toTakeScreenShotOfWebPage(WebDriver driver, String screenshotname) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File temp = ts.getScreenshotAs(OutputType.FILE);
 		File src = new File("./errorShots/"+screenshotname+".jpeg");
@@ -302,7 +303,7 @@ public class webdriverUtility {
 	 * @param xpathOfAnElement
 	 * @throws IOException 
 	 */
-	public void toTakeScreenshot(WebDriver driver, String xpathOfAnElement) throws IOException {
+	public void toTakeScreenshotOfElement(WebDriver driver, String xpathOfAnElement) throws IOException {
 		File temp = driver.findElement(By.xpath(xpathOfAnElement)).getScreenshotAs(OutputType.FILE);
 		File src = new File("./ErrorShots/WoodenStreetLogo.jpeg");
 		org.openqa.selenium.io.FileHandler.copy(temp, src);
