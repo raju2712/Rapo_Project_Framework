@@ -122,7 +122,7 @@ public class webdriverUtility {
 		Set<String> allIds = driver.getWindowHandles();
 		for (String id : allIds) {
 			driver.switchTo().window(id);
-			String windowTitle = driver.switchTo().window(id).getTitle();
+			String windowTitle = driver.getTitle();
 			if(windowTitle.contains(partialTitle)) {
 				break;
 			}
