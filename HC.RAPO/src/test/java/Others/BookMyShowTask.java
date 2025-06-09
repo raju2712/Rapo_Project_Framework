@@ -1,4 +1,4 @@
-package NestedFrame_Model;
+package Others;
 
 import java.time.Duration;
 
@@ -17,7 +17,7 @@ public class BookMyShowTask {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
 		driver.get("https://in.bookmyshow.com/explore/home/bengaluru");
-//		//WebElement locFrame = driver.findElement(By.xpath("//span[contains(text(),'Popular Cities')]"));
+//		WebElement locFrame = driver.findElement(By.xpath("//span[contains(text(),'Popular Cities')]"));
 //		driver.switchTo().frame(driver.findElement(By.xpath("//div[@class='bwc__sc-1ihur1g-5 fIsZNV in-animation']")));
 //		driver.findElement(By.xpath("//ul[@class='bwc__sc-ttnkwg-15 fFoiPE']/descendant::span[contains(text(),'Bengaluru')]")).click();
 		driver.findElement(By.xpath("//img[@src=\"https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-NDEuOEsgTGlrZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00445570-kzxmenqgnx-portrait.jpg\"]")).click();

@@ -310,7 +310,7 @@ public class webdriverUtility {
 	}
 	
 	/**
-	 * This method is used to Scrool Down
+	 * This method is used to Scroll Down the Webpage for 500 axis
 	 * @param driver
 	 */
 	public void jse(WebDriver driver) {

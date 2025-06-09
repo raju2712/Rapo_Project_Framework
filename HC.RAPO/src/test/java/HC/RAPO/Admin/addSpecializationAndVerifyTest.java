@@ -37,14 +37,10 @@ public class addSpecializationAndVerifyTest extends BaseClass{
 		String SPECIALIZATION = eutil.toReadDataFromExcel("admin", 4, 2);
 		String randomSpec = SPECIALIZATION + jutil.togetRandomNumber();
 		
-		UtilityClassObject.getTest().log(Status.INFO, "Application Opened");
 		wp.toScrollDownToLoginAsAdmin(driver);
-		UtilityClassObject.getTest().log(Status.INFO, "Admin Login Page opened");
 		alp.LoginAsAdmin(ADMIN_USERNAME, ADMIN_PASSWORD);
-		UtilityClassObject.getTest().log(Status.INFO, "Logged in as admin");
 		ahp.getDoctorsTab().click();
 		ahp.getDoctorSpecializationTab().click();
-		UtilityClassObject.getTest().log(Status.INFO, "Doctor specialization page opened");
 		dsp.getDoctorSpecilizationTF().sendKeys(randomSpec);
 		dsp.getSubmitBtn().click();
 		
@@ -61,7 +57,6 @@ public class addSpecializationAndVerifyTest extends BaseClass{
 
 		org.testng.Assert.assertEquals(actualSpecialization, randomSpec);
 		ahp.logoutAsAdmin();
-		UtilityClassObject.getTest().log(Status.PASS, "Logged out as admin");
 		
 	}
 }

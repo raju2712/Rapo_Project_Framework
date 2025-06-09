@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import genericUtility.webdriverUtility;
 
 public class addDoctorPage {
+	
 	WebDriver driver;
 
 	public addDoctorPage(WebDriver driver) {

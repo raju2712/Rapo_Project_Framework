@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Date;
 
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
@@ -54,7 +55,8 @@ public class excelFileUtility {
 	public void returnData(String sheetname, int row, int cell, Date pname) throws Throwable {
 		FileInputStream fis = new FileInputStream(".\\src\\test\\resources\\TestData.xlsx");
 		Workbook wb = WorkbookFactory.create(fis);
-		wb.getSheet(sheetname).getRow(row).createCell(cell).setCellValue(pname);
+		wb.getSheet(sheetname).createRow(row).createCell(cell, CellType.STRING).setCellValue(pname);
+		//wb.getSheet(sheetname).getRow(row).createCell(cell).setCellValue(pname);
 		FileOutputStream fos = new FileOutputStream(".\\src\\test\\resources\\TestData.xlsx");
 		wb.write(fos);
 	}

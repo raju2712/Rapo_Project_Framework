@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.xml.XmlTest;
 
 import com.aventstack.extentreports.Status;
 
@@ -25,7 +26,7 @@ public class addDoctorAndVerifyTest extends BaseClass {
 
 	@Parameters("BROWSER")
 	@Test(groups = "integration")
-	public void addDoctorTest() throws Throwable {
+	public void addDoctorTest(XmlTest test) throws Throwable {
 
 		propertyFileUtility putil = new propertyFileUtility();
 		welcomePage wp = new welcomePage(driver);
@@ -47,28 +48,23 @@ public class addDoctorAndVerifyTest extends BaseClass {
 		String EMAIL = eutil.toReadDataFromExcel("admin", 4, 3) + jutil.togetRandomNumber() + "@gmail.com";
 		StringBuilder PASSWORD = jutil.getRandomName();
 
-		UtilityClassObject.getTest().log(Status.INFO, "Application Opened");
 		wp.toScrollDownToLoginAsAdmin(driver);
-		UtilityClassObject.getTest().log(Status.INFO, "Admin Login Page opened");
 		alp.LoginAsAdmin(ADMIN_USERNAME, ADMIN_PASSWORD);
-		UtilityClassObject.getTest().log(Status.INFO, "Logged in as admin");
 		ahp.getDoctorsTab().click();
 		ahp.getDoctorSpecializationTab().click();
-		UtilityClassObject.getTest().log(Status.INFO, "Doctor specialization page opened");
 		dsp.getDoctorSpecilizationTF().sendKeys(randomSpec);
 		dsp.getSubmitBtn().click();
-		UtilityClassObject.getTest().log(Status.INFO, "Specialization added");
 		ahp.getDoctorsTab().click();
 		ahp.getAddDoctorTab().click();
-		UtilityClassObject.getTest().log(Status.INFO, "Add doctor page opened");
 		adp.createDoctor(randomSpec, DOCTOR_NAME, CLINIC_ADDRESS, FEES, CONTACT_NO, EMAIL, PASSWORD);
-		UtilityClassObject.getTest().log(Status.INFO, "New doctor created");
+		
 //		WebElement pencilEdit = driver.findElement(By.xpath("//tr/td[text()='"+DOCTOR_NAME+"']/../td[5]/div/a/i[@class='fa fa-pencil']"));
 //		WebElement removeIcon = driver.findElement(By.xpath("//tr/td[text()='"+DOCTOR_NAME+"']/../td[5]/div/a/i[@class='fa fa-times fa fa-white']"));
 		String docName = driver.findElement(By.xpath("//tr/td[text()='" + DOCTOR_NAME + "']")).getText();
+		
+	//Assertion
 		Assert.assertTrue(docName.contains(DOCTOR_NAME));
-		UtilityClassObject.getTest().log(Status.INFO, "Created doctor is listed");
 		ahp.logoutAsAdmin();
-		UtilityClassObject.getTest().log(Status.INFO, "Logged out as admin");
+		
 	}
 }

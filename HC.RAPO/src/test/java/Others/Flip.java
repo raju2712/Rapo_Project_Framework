@@ -1,4 +1,4 @@
-package NestedFrame_Model;
+package Others;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -20,6 +20,11 @@ import org.testng.annotations.Test;
 
 public class Flip {
 
+	/**
+	 * Capture all the product name and price and store in Excel sheet
+	 * @throws Throwable
+	 */
+	
 	@Test
 	public void Amazon() throws Throwable {
 
