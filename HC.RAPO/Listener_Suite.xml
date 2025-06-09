@@ -3,16 +3,11 @@
 <suite name="Suite" thread-count="1">
 
 
-<!-- The below lines are used to run the test scripts without initilize @Listener annotation in every test scripts
+<!-- The below lines are used to run the test scripts mentioned below without initilize @Listener annotation in every test scripts -->
 
 	<listeners>
 		<listener class-name="genericUtility.ListenerImplementClass"></listener>
 	</listeners>
-	
--->
-	
-	<!-- before execute this XML file un-comment the above lines of code-->
-	
 	
 	<test name="Test">
 		<classes>

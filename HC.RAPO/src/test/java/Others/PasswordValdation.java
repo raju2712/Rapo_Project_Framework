@@ -4,7 +4,7 @@ public class PasswordValdation {
 
 	public static void main(String[] args) {
 		
-//		password should contain 1 uppercase
+//		password should contain    1 uppercase
 //		                           1 lowercase
 //		                           1 number
 //		                           no space
