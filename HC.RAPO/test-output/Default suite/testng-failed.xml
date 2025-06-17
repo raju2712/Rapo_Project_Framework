@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="NestedFrame_Model.phpTravels">
+      <class name="Others.Calender">
         <methods>
-          <include name="phpDemo"/>
+          <include name="makeMyTrip"/>
         </methods>
-      </class> <!-- NestedFrame_Model.phpTravels -->
+      </class> <!-- Others.Calender -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
