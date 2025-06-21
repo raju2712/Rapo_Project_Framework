@@ -78,7 +78,7 @@ public class DataBaseUtility {
 			Statement stmt = connect.createStatement();
 			result = stmt.executeQuery(query);
 		} 
-		catch (Exception e) 
+		catch (Exception e)
 		{
 			
 		}
