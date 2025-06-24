@@ -18,7 +18,7 @@
 		<classes>
 			<class name="HC.RAPO.Admin.sessionLogViewTest">  <!-- In this class specified method only will run  -->
 				<methods>
-					<include name="adminCanSeeSessionLogOfUserTest" />
+					<include name="adminCanSeeSessionLogOfUserTest" /> <!-- For Regional Regression Test -->
 				</methods>
 			</class>
 			<class name="HC.RAPO.Admin.addDoctorAndVerifyTest" />

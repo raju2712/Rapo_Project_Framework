@@ -2,36 +2,43 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-16T15:05:05 IST" name="Default suite" finished-at="2025-06-16T15:06:20 IST" duration-ms="75078">
+  <suite started-at="2025-06-24T10:59:54 IST" name="Default suite" finished-at="2025-06-24T11:00:07 IST" duration-ms="13383">
     <groups>
+      <group name="integration">
+        <method signature="addSpecializationAndVerifyTest.addSpecializationTest()[pri:0, instance:HC.RAPO.Admin.addSpecializationAndVerifyTest@3349e9bb]" name="addSpecializationTest" class="HC.RAPO.Admin.addSpecializationAndVerifyTest"/>
+      </group> <!-- integration -->
     </groups>
-    <test started-at="2025-06-16T15:05:05 IST" name="Default test" finished-at="2025-06-16T15:06:20 IST" duration-ms="75078">
-      <class name="Others.Calender">
-        <test-method signature="makeMyTrip()[pri:0, instance:Others.Calender@4a94ee4]" started-at="2025-06-16T15:05:05 IST" name="makeMyTrip" finished-at="2025-06-16T15:06:20 IST" duration-ms="75015" status="FAIL">
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+    <test started-at="2025-06-24T10:59:54 IST" name="Default test" finished-at="2025-06-24T11:00:07 IST" duration-ms="13383">
+      <class name="HC.RAPO.Admin.addSpecializationAndVerifyTest">
+        <test-method is-config="true" signature="dataBaseConnection()[pri:0, instance:HC.RAPO.Admin.addSpecializationAndVerifyTest@3349e9bb]" started-at="2025-06-24T10:59:53 IST" name="dataBaseConnection" finished-at="2025-06-24T10:59:54 IST" duration-ms="962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataBaseConnection -->
+        <test-method is-config="true" signature="closeDBconnection()[pri:0, instance:HC.RAPO.Admin.addSpecializationAndVerifyTest@3349e9bb]" started-at="2025-06-24T10:59:54 IST" name="closeDBconnection" finished-at="2025-06-24T10:59:54 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDBconnection -->
+        <test-method is-config="true" signature="toLaunchBrowser()[pri:0, instance:HC.RAPO.Admin.addSpecializationAndVerifyTest@3349e9bb]" started-at="2025-06-24T10:59:54 IST" name="toLaunchBrowser" finished-at="2025-06-24T10:59:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toLaunchBrowser -->
+        <test-method is-config="true" signature="toLaunchBrowser()[pri:0, instance:HC.RAPO.Admin.addSpecializationAndVerifyTest@3349e9bb]" started-at="2025-06-24T10:59:54 IST" name="toLaunchBrowser" finished-at="2025-06-24T10:59:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toLaunchBrowser -->
+        <test-method is-config="true" signature="toGetIntoUrl()[pri:0, instance:HC.RAPO.Admin.addSpecializationAndVerifyTest@3349e9bb]" started-at="2025-06-24T10:59:54 IST" name="toGetIntoUrl" finished-at="2025-06-24T10:59:59 IST" duration-ms="5212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toGetIntoUrl -->
+        <test-method signature="addSpecializationTest()[pri:0, instance:HC.RAPO.Admin.addSpecializationAndVerifyTest@3349e9bb]" started-at="2025-06-24T10:59:59 IST" name="addSpecializationTest" finished-at="2025-06-24T11:00:00 IST" duration-ms="1201" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Error communicating with the remote browser. It may have died.
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eada68975c9fe772844c89dc0a7ffdce, findElement [value, using]]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\FLOWER~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55328}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55328/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: eada68975c9fe772844c89dc0a7ffdce]]>
+              <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Sheet.getRow(int)" because the return value of "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '4.29.0', revision: '5fc1ec94cb'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [eada68975c9fe772844c89dc0a7ffdce, findElement [value, using]]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.69, chrome: {chromedriverVersion: 137.0.7151.70 (dfa4dc56b2ab..., userDataDir: C:\Users\FLOWER~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55328}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55328/devtoo..., se:cdpVersion: 137.0.7151.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: eada68975c9fe772844c89dc0a7ffdce
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:572)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at Others.Calender.makeMyTrip(Calender.java:30)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Sheet.getRow(int)" because the return value of "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" is null
+at genericUtility.excelFileUtility.toReadDataFromExcel(excelFileUtility.java:27)
+at HC.RAPO.Admin.addSpecializationAndVerifyTest.addSpecializationTest(addSpecializationAndVerifyTest.java:37)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -58,54 +65,25 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.io.UncheckedIOException: java.io.IOException: HTTP/1.1 header parser received no bytes
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:497)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.lambda$executeAsync$1(JdkHttpClient.java:384)
-at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
-Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
-at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:969)
-at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133)
-at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:456)
-... 8 more
-Caused by: java.io.IOException: HTTP/1.1 header parser received no bytes
-at java.net.http/jdk.internal.net.http.common.Utils.wrapWithExtraDetail(Utils.java:440)
-at java.net.http/jdk.internal.net.http.Http1Response$HeadersReader.onReadError(Http1Response.java:590)
-at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.checkForErrors(Http1AsyncReceiver.java:302)
-at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.flush(Http1AsyncReceiver.java:268)
-at java.net.http/jdk.internal.net.http.common.SequentialScheduler$LockingRestartableTask.run(SequentialScheduler.java:182)
-at java.net.http/jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler.java:149)
-at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-... 3 more
-Caused by: java.net.SocketException: Connection reset
-at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:403)
-at java.base/sun.nio.ch.SocketChannelImpl.implRead(SocketChannelImpl.java:435)
-at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:493)
-at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
-at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
-at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
-at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
-at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
-at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
-at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
-at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
-at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1476)
-at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1421)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1421)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- makeMyTrip -->
-      </class> <!-- Others.Calender -->
+        </test-method> <!-- addSpecializationTest -->
+        <test-method is-config="true" signature="toCloseBrowser()[pri:0, instance:HC.RAPO.Admin.addSpecializationAndVerifyTest@3349e9bb]" started-at="2025-06-24T11:00:07 IST" name="toCloseBrowser" finished-at="2025-06-24T11:00:07 IST" duration-ms="345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- toCloseBrowser -->
+        <test-method is-config="true" signature="closeDBconnection()[pri:0, instance:HC.RAPO.Admin.addSpecializationAndVerifyTest@3349e9bb]" started-at="2025-06-24T11:00:07 IST" name="closeDBconnection" finished-at="2025-06-24T11:00:07 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDBconnection -->
+        <test-method is-config="true" signature="closeDBconnection()[pri:0, instance:HC.RAPO.Admin.addSpecializationAndVerifyTest@3349e9bb]" started-at="2025-06-24T11:00:07 IST" name="closeDBconnection" finished-at="2025-06-24T11:00:07 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDBconnection -->
+      </class> <!-- HC.RAPO.Admin.addSpecializationAndVerifyTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

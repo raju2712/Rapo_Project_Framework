@@ -3,11 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Others.Calender">
+      <class name="HC.RAPO.Admin.addSpecializationAndVerifyTest">
         <methods>
-          <include name="makeMyTrip"/>
+          <include name="dataBaseConnection"/>
+          <include name="addSpecializationTest"/>
+          <include name="closeDBconnection"/>
+          <include name="toGetIntoUrl"/>
+          <include name="toCloseBrowser"/>
+          <include name="toLaunchBrowser"/>
         </methods>
-      </class> <!-- Others.Calender -->
+      </class> <!-- HC.RAPO.Admin.addSpecializationAndVerifyTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
