@@ -26,6 +26,7 @@ public class ListenerImplementClass implements ITestListener , ISuiteListener{
 	@Override
 	public void onStart(ISuite suite) {
 		System.out.println("=====report configuration======");
+		
 		String time = new Date().toString().replace(" ", "_").replace(":", "_");
 		
 		esr = new ExtentSparkReporter("./AdvanceReport/report_" + time + ".html");
@@ -42,14 +43,16 @@ public class ListenerImplementClass implements ITestListener , ISuiteListener{
 
 	@Override
 	public void onFinish(ISuite suite) {
-		System.out.println("report backup");
+		System.out.println("Report backuped");
 		report.flush();
 	}
 
 	@Override
 	public void onTestStart(ITestResult result) {
 		System.out.println("-----------"+result.getMethod().getMethodName()+"-----START-------");
+		
 		test = report.createTest(result.getMethod().getMethodName());
+		
 		UtilityClassObject.setTest(test);
 		test.log(Status.INFO,result.getMethod().getMethodName()+"-----START-------");
 
@@ -72,7 +75,6 @@ public class ListenerImplementClass implements ITestListener , ISuiteListener{
 		
 		UtilityClassObject.getTest().log(Status.FAIL, result.getThrowable());
 		test.addScreenCaptureFromBase64String(src, testName +"_" + time);
-		
 		test.log(Status.FAIL, result.getMethod().getMethodName()+"-----FAILED-----");
 	}
 
