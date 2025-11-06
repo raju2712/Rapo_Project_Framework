@@ -10,7 +10,7 @@ import com.mysql.cj.jdbc.Driver;
 
 public class DataBaseUtility {
 	
-	Connection connect;
+	Connection connect; //Connection is a Interface
 	
 	/**
 	 * This method is used to get connection of database
@@ -66,7 +66,7 @@ public class DataBaseUtility {
 	}
 	
 	/**
-	 * This method is used to select query
+	 * This method is used to "select" query
 	 * 
 	 * @param query
 	 * @return
@@ -86,7 +86,7 @@ public class DataBaseUtility {
 	}
 	
 	/**
-	 * This method is used to non-select query
+	 * This method is used to "non-select" query
 	 * @param query
 	 * @return
 	 */
