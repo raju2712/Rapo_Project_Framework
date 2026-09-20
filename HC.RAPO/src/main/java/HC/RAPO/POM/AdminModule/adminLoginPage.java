@@ -50,7 +50,7 @@ public class adminLoginPage {
 	
 	public void LoginAsAdmin(String adminUserName, String adminPassword) {
 		//wp.getClickHereBtnOfAdmin().click();
-		wutil.switchWindowUsiingPartialUrl(driver,"hms/admin/");	
+		wutil.switchWindowUsingPartialUrl(driver,"hms/admin/");	
 		getUsernameTF().sendKeys(adminUserName);
 		getPasswordTF().sendKeys(adminPassword);
         getLoginBtn().click();

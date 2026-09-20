@@ -77,7 +77,7 @@ public class webdriverUtility {
 	 * @param driver
 	 * @param partialUrl
 	 */
-	public void switchWindowUsiingPartialUrl(WebDriver driver, CharSequence partialUrl) {
+	public void switchWindowUsingPartialUrl(WebDriver driver, CharSequence partialUrl) {
 		Set<String> allWindowIds = driver.getWindowHandles();
 		Iterator<String> iterate = allWindowIds.iterator();
 		

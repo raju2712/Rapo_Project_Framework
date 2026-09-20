@@ -49,7 +49,7 @@ public class patientLoginPage {
 
 	public void loginAsPatient(String patientUserName, String patientPassword) {
 
-		wutil.switchWindowUsiingPartialUrl(driver, "user-login.php");
+		wutil.switchWindowUsingPartialUrl(driver, "user-login.php");
 		getUsernameTF().sendKeys(patientUserName);
 		getPasswordTF().sendKeys(patientPassword);
 		getLoginBtn().click();
