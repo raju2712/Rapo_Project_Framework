@@ -8,6 +8,8 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
+
+import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -79,18 +81,35 @@ public class webdriverUtility {
 	 */
 	public void switchWindowUsingPartialUrl(WebDriver driver, CharSequence partialUrl) {
 		Set<String> allWindowIds = driver.getWindowHandles();
-		Iterator<String> iterate = allWindowIds.iterator();
-		
-		while(iterate.hasNext()) {
-			String ChildwindowId = iterate.next();
-			driver.switchTo().window(ChildwindowId);
-			
-			String actualUrl = driver.getCurrentUrl();
-			if(actualUrl.contains(partialUrl)) {
+		for(String window : allWindowIds) {
+			driver.switchTo().window(window);
+			String actURL = driver.getCurrentUrl();
+			if(actURL.contains(partialUrl)) {
 				break;
 			}
 		}
-	}
+//		Iterator<String> iterate = allWindowIds.iterator();
+//		
+//		while(iterate.hasNext()) {
+//			String ChildwindowId = iterate.next();
+//			driver.switchTo().window(ChildwindowId);
+//			
+//			String actualUrl = driver.getCurrentUrl();
+//			if(actualUrl.contains(partialUrl)) {
+//				break;
+//			}
+		}
+		
+//		String parent = driver.getWindowHandle();
+//
+//		Set<String> windows = driver.getWindowHandles();
+//
+//		for (String window : windows) {
+//		    if (!window.equals(parent)) {
+//		        driver.switchTo().window(window);
+//		    }
+//		}
+	
 	
 	/**
 	 * This method is used to Switch the Driver control back to PARENT WINDOW
@@ -100,17 +119,24 @@ public class webdriverUtility {
 	 */
 	public void switchWindowUsingPartialTitle(WebDriver driver, CharSequence partialTitle) {
 		Set<String> allWindowIds = driver.getWindowHandles();
-		Iterator<String> iterator = allWindowIds.iterator();
-		
-		while(iterator.hasNext()) {
-			String ChildwindowId = iterator.next();
-			driver.switchTo().window(ChildwindowId);
-			
-			String actualUrl = driver.getTitle();
-			if(actualUrl.contains(partialTitle)) {
+		for(String window : allWindowIds) {
+			driver.switchTo().window(window);
+			String actTitle = driver.getTitle();
+			if(actTitle.contains(partialTitle)) {
 				break;
 			}
 		}
+//		Iterator<String> iterator = allWindowIds.iterator();
+//		
+//		while(iterator.hasNext()) {
+//			String ChildwindowId = iterator.next();
+//			driver.switchTo().window(ChildwindowId);
+//			
+//			String actualUrl = driver.getTitle();
+//			if(actualUrl.contains(partialTitle)) {
+//				break;
+//			}
+//		}
 	}
 	
 	/**

@@ -60,8 +60,8 @@ public class ListenerImplementClass implements ITestListener , ISuiteListener{
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		System.out.println("-----------"+result.getMethod().getMethodName()+"-----END-------");
-		test.log(Status.INFO,result.getMethod().getMethodName()+"-----COMPLETED-------");
+		//System.out.println("-----------"+result.getMethod().getMethodName()+"-----END-------");
+		test.log(Status.PASS,result.getMethod().getMethodName()+"-----COMPLETED-------");
 	}
 
 	@Override
@@ -80,7 +80,7 @@ public class ListenerImplementClass implements ITestListener , ISuiteListener{
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		
+		test.log(Status.INFO, result.getMethod().getMethodName()+"-----SKIPPED-----");
 	}
 
 	@Override
